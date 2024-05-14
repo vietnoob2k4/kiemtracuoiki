@@ -1,3 +1,4 @@
+
 {
         "intents": [
             {
@@ -9,9 +10,10 @@
              {
                  "tag": "xin chao",
                  "patterns": ["xin chao", "chao", "alo"],
-                 "responses": ["xin chao, ban can giup gi a"],
+                 "responses": ["xin chao, ban can giup gi a",""],
                  "context": [""]
              },
+             
              {
                  "tag": "cam on",
                  "patterns": ["cam on", "cam on ban", "thank you", "cam on nhe"],
@@ -95,7 +97,7 @@
              },
              {
                "tag":"thoi gian",
-               "patterns":["lich trinh tuyen sinh","thoi gian tuyen sinh","lich trinh xet tuyen","thoi gian xet tuyen"],
+               "patterns":["lich trinh tuyen sinh","thoi gian tuyen sinh","lich trinh xet tuyen","thoi gian xet tuyen","khi nao tuyen sinh","khi nao xet tuyen","bao gio tuyen sinh","bao gio xet tuyen"],
                "responses":["Doi voi phuong thuc 1: Xet tuyen dua tren ket qua thi tot nghiep THPT nam 2022: theo quy dinh cua Bo GD&DT\n.Doi voi phuong thuc 2: Xet tuyen dua tren ket qua hoc tap bac THPT (hoc ba):\nDot 1: Tu 15/03 den 30/06/2022\nDot 2: Tu 01/07 den 20/07/2022\nDoi voi phuong thuc 3: Tu ngay 15/03/2022 den ngay 20/07/2022.\nDoi voi phuong thuc 4: Xet tuyen dua vao ket qua ky thi Danh gia nang luc nam 2022 cua Dai hoc Quoc gia Ha Noi, Dai hoc Quoc gia Ho Chi Minh, ky thi Danh gia tu duy cua Truong Dai hoc Bach Khoa Ha Noi: Tu ngay 15/03/2022 den ngay 30/09/2022."],
                "context":[]
              },
@@ -128,7 +130,80 @@
                "patterns":["hoc bong cmc tien phong"],
                "responses":["So luong du kien: 250 suat.Tri gia hoc bong: 50% hoc phi toan khoa hoc (khong bao gom hoc phi chuong trinh hoc tieng Anh).Doi tuong va tieu chi xet hoc bong: thi sinh nhap hoc Truong Dai hoc CMC nam 2024 thoa man it nhat mot trong cac tieu chi sau:"],
                "context":[]
+             },
+             {
+              "tag":"he dao tao",
+              "patterns":["he dao tao"],
+              "responses":["nha truong co 2 he dao tao gon he dao tao song ngu va he dao tao tieu chuan, ban muon hoi ve he dao tao nao"],
+              "context":[]
+
+
+             },
+             {
+              "tag":"he dao tao tieu chuan",
+              "patterns":["he dao tao tieu chuan"],
+              "responses":["Chuong trinh giao duc dai hoc He dao tao Tieu chuan (Standard Mode – SM) la chuong trinh dao tao cu nhan trinh do dai hoc chinh quy, dat chuan dau ra theo cong bo cua Truong va dap ung yeu cau hoi nhap trong khu vuc va the gioi. Tu nam thu hai, sinh vien hoc tap voi tai lieu giang day bang tieng Anh cho cac mon chuyen nganh\n cac nganh bao gon\ncong nghe thong tin\nkho hoc may tinh\n quan tri kinh doanh\n marketing"],
+              "context":[]
+             },
+             {
+              "tag":"he dao tao song ngu",
+              "patterns":["he dao tao song ngu"],
+              "responses":["Chuong trinh giao duc dai hoc He dao tao Song ngu (Global Mode – GM) la chuong trinh dao tao cu nhan trinh do dai hoc chinh quy, voi diem noi bat la su dung ngon ngu giang day tieng Anh cho toan bo hoc phan chuyen mon. Chuong trinh dao tao cua He dao tao Song ngu duoc xay dung voi phuong phap giao duc dac biet, dao tao nguoi hoc dat chuan dau ra cao hon ve ky nang tieng Anh, ky nang mem, ky nang chuyen mon.\n cong nghe thong tin viet - han - nhat \n marketing \nkhoa hoc may tinh\n quan tri kinh doanh"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh",
+              "patterns":["chuong trinh dao tao tieng anh"],
+              "responses":["chuong trinh tieng anh gom 6 cap do, dam bao chat luong dau ra tuong duong ielts 6.0, ban muon hoi ve cap do may"],
+              "context":[]
+             },
+             {
+              "tag":"hoc phi tieng anh",
+              "patterns":["hoc tieng anh mot cap do hoc phi bao nhieu tien"],
+              "responses":["tien hoc tieng anh 1 la 10 trieu cho mot cap do gom 120 tiet hoc tren lop va 50 tiet tu hoc"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh 1",
+              "patterns":["chuong trinh dao tao tieng anh cap do 1"],
+              "responses":["tieu chuan dau ra la 3.0 ielts, la cap do dau tien trong 6 cap do"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh 2",
+              "patterns":["chuong trinh dao tao tieng anh cap do 2"],
+              "responses":["tieu chuan dau ra la 3.5 ielts, hoc sau cap do 1 hoac tuong duong"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh 3",
+              "patterns":["chuong trinh dao tao tieng anh cap do 3"],
+              "responses":["tieu chuan dau ra la 4.0 ielts, hoc sau cap do 2 hoac tuong duong"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh 4",
+              "patterns":["chuong trinh dao tao tieng anh cap do 4"],
+              "responses":["tieu chuan dau ra la 4.5 ielts, hoc sau cap do 3 hoac tuong duong"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh 5",
+              "patterns":["chuong trinh dao tao tieng anh cap do 5"],
+              "responses":["tieu chuan dau ra la 5.0 ielts, hoc sau cap do 4 hoac tuong duong"],
+              "context":[]
+             },
+             {
+              "tag":"tieng anh 6",
+              "patterns":["chuong trinh dao tao tieng anh cap do 6"],
+              "responses":["tieu chuan dau ra la 5.5 ielts, hoc sau cap do 5 hoac tuong duong"],
+              "context":[]
              }
+             
+             
+
+
+
 
 
 
