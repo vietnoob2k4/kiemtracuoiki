@@ -1,4 +1,3 @@
-
 {
         "intents": [
             {
@@ -9,40 +8,40 @@
             },
              {
                  "tag": "xin chao",
-                 "patterns": ["xin chao", "chao", "alo"],
-                 "responses": ["xin chao, ban can giup gi a",""],
-                 "context": [""]
+                 "patterns": ["xin chao", "chao", "alo","chao ban"],
+                 "responses": ["xin chao, ban can giup gi a","xin chao, ban can tu van gi a"],
+                 "context": ["casual"]
              },
              
              {
                  "tag": "cam on",
-                 "patterns": ["cam on", "cam on ban", "thank you", "cam on nhe"],
+                 "patterns": ["cảm ơn", "cam on ban", "thank you", "cam on nhe"],
                  "responses": ["khong co gi, rat vui vi da giup duoc ban"],
-                 "context": [""]
+                 "context": ["casual"]
              },
              {
                 "tag":"gt",
                 "patterns":["truong dai hoc CMC","gioi thieu dai hoc cmc"],
                 "responses":["Dai hoc CMC La mot thanh vien thuoc Khoi Giao duc va Nghien cuu cua Tap doan Cong nghe CMC, \nTruong Dai hoc CMC duoc dinh huong phat trien tu Dai hoc thong minh, doi moi sang tao trong giai doan 2022 2032, toi Dai hoc nghien cuu  sau nam 2032. Muc tieu hang dau cua Nha truong la tro thanh mot Dai hoc cong nghe voi cac linh vuc dao tao the manh la Khoa hoc may tinh, he thong thong tin, dien tu vien thong va cac linh vuc khac gan voi yeu cau phat trien khoa hoc cong nghe va kinh te so cua ca nuoc, voi quy mo co trung tu 20 den 30 nghin sinh vien vao nam 2039."],
-                "context":[""]
+                "context":["gioi thieu"]
              },
              {
                 "tag":"gt2",
                 "patterns":[" tap doan cong ty CMC","gioi thieu tap doan cmc"],
                 "responses":["Tap doan Cong nghe CMC hien la tap doan cong nghe thong tin va vien thong lon thu hai tai Viet Nam. Thanh lap nam 1993, CMC da khang dinh vi the tren thi truong Viet Nam va nhieu nuoc tren the gioi thong qua nhung hoat dong kinh doanh chu luc o 4 khoi: Khoi Cong nghe  Giai phap , Khoi Dich vu Vien thong , Khoi Kinh doanh Quoc te  va Khoi Nghien cuu Giao duc  voi 8 cong ty thanh vien, lien doanh, vien nghien cuu. Trong giai doan 2021 2025, CMC dat muc tieu tro thanh Cong ty So Toan cau, dang cap quoc te, nha tu van va trien khai giai phap chuyen doi so hang dau cho doanh nghiep va to chuc, dat doanh thu mot ty USD va quy mo hon 10.000 nhan su."],
-                "context":[""]
+                "context":["gioi thieu"]
              },
              {
                 "tag":"xet tuyen",
-                "patterns":["xet tuyen","tuyen sinh"],
+                "patterns":["chuong trinh xet tuyen","chuong trinh tuyen sinh"],
                 "responses":["ban muon hoi thong tin gi ve chuong trinh tuyen sinh cua chung toi (chi tieu, phuong thuc,cac nganh tuyen sinh)"],
                 "context":["xet tuyen"]
              },
              {
                 "tag":"nganh",
                 "patterns":["nganh xet tuyen","nganh tuyen sinh"],
-                "responses":["truong đại hoc cmc bao gom cac nganh: \ncong nghe thong tin, \nquan tri kinh doanh, \nngon ngu nhat, \nngon ngu han, \nthiet ke do hoa"],
-                "context":["xet_tuyen"]
+                "responses":["truong dai hoc cmc bao gom cac nganh: \ncong nghe thong tin, \nquan tri kinh doanh, \nngon ngu nhat, \nngon ngu han, \nthiet ke do hoa"],
+                "context":["xet tuyen"]
              },
              
              
@@ -57,85 +56,98 @@
                "tag":"chitieu",
                "patterns":["chi tieu","chi tieu xet tuyen","chi tieu tuyen sinh"],
                "responses":["cac chi tieu bao gom :\ncong nghe thong tin :250;\n quan tri kinh doanh: 100;\n ngon ngu nhat: 200;\n ngon ngu han: 200;\n thiet ke do hoa:300"],
-               "context":[""]
+               "context":["xet tuyen"]
             },
             {
                "tag":"phuongthuc",
                "patterns":["phuong thuc tuyen sinh","phuong thuc xet tuyen"],
                "responses":["Truong Dai hoc CMC tuyen sinh theo 4 phuong thuc:\nPhuong thuc 1 (CMC100): Xet tuyen dua tren ket qua thi tot nghiep THPT.\nPhuong thuc 2 (CMC200): Xet tuyen dua tren ket qua hoc tap bac THPT (hoc ba).\nPhuong thuc 3 (CMC303): Xet tuyen thang theo De an cua Truong Dai hoc CMC.\nPhuong thuc 4 (CMC402): Xet tuyen dua vao ket qua ky thi Danh gia nang luc nam 2022 cua Dai hoc Quoc gia Ha Noi, Dai hoc Quoc gia Ho Chi Minh hoac Danh gia tu duy Truong Dai hoc Bach Khoa Ha Noi."],
-               "context":[]
+               "context":["xet tuyen"]
              },
              {
                "tag":"diachi",
                "patterns":["dia diem nhan ho so xet tuyen","dia chi nhan ho so xet tuyen"," nop ho so xet tuyen o dau"],
-               "responses":["trụ sở chính: CMC Tower So 11 Duy Tan, Dich Vong Hau, Cau Giay, Ha Noi;Co so 1: So 84C, Duong Nguyen Thanh Binh, Van Phuc, Ha Dong, Ha Noi;Co so 2: Van Phuc Building, Duong To Huu, Van Phuc, Ha Dong, Ha Noi;Co so 3: Tay Mo, Nam Tu Liem, Ha Noi"],
-               "context":[]
+               "responses":["tru so chinh: CMC Tower So 11 Duy Tan, Dich Vong Hau, Cau Giay, Ha Noi;\nCo so 1: So 84C, Duong Nguyen Thanh Binh, Van Phuc, Ha Dong, Ha Noi;\nCo so 2: Van Phuc Building, Duong To Huu, Van Phuc, Ha Dong, Ha Noi;\nCo so 3: Tay Mo, Nam Tu Liem, Ha Noi"],
+               "context":["xet tuyen"]
              },
              {
                "tag":"doi tuong",
                "patterns":["doi tuong xet tuyen ","dieu kien xet tuyen","dieu kien xet tuyen"],
                "responses":["Doi tuong du tuyen duoc xac dinh tai thoi diem xet tuyen (truoc khi cong bo ket qua xet tuyen chinh thuc), bao gom:\nNguoi da duoc cong nhan tot nghiep trung hoc pho thong (THPT) cua Viet Nam hoac co bang tot nghiep cua nuoc ngoai duoc cong nhan trinh do tuong duong;\nNguoi da co bang tot nghiep trung cap nganh nghe thuoc cung nhom nganh du tuyen va da hoan thanh du yeu cau khoi luong kien thuc van hoa cap THPT theo quy dinh cua phap luat.\nDoi tuong du tuyen phai dap ung cac dieu kien sau:Dat nguong dau vao theo quy dinh cua Truong;\nCo du suc khoe de hoc tap theo quy dinh hien hanh;Co du thong tin ca nhan, ho so du tuyen theo quy dinh;\nDoi voi thi sinh khuyet tat bi suy giam kha nang hoc tap thi Chu tich Hoi dong tuyen sinh xem xet, quyet dinh."],
-               "context":[]
+               "context":["xet tuyen"]
              },
              {
                "tag":"lien he",
                "patterns":["hoi chi tiet"],
-               "responses":["ban lien he voi so dien thoai: 0999999999 de hoi chi tiet nhe"],
-               "context":[]
+               "responses":["ban lien he voi so dien thoai: 0999999999 hoac dia chi email:tuyensinh@cmc-u.edu.vn de hoi chi tiet nhe"],
+               "context":["casual"]
+             },
+             {
+              "tag":"lien he2",
+              "patterns":["tai khoan mang xa hoi"],
+              "responses":["ban nho theo doi cmc de nhan duoc nhung thong tin moi nhat nhe \n faceook:https://www.facebook.com/TruongDaiHocCMC\n instagram:https://www.instagram.com/cmcuniversity/\n youtube:https://www.youtube.com/@cmcuniversity"],
+              "context":["casual"]
              },
              {
                "tag":"huongdan",
                "patterns":["huong dan dang ky xet tuyen","cac buoc dang ky xet tuyen"],
                "responses":["Buoc 1: Chon nganh hoc ban muon theo hoc.\nBuoc 2: Dang ky tu van voi Can bo tu van tuyen sinh\nBuoc 3: Nop ho so xet tuyen\nBuoc 4: Nhan thong bao ket qua xet tuyen\nBuoc 5: Hoan thien ho so\nBuoc 6: Nhap hoc – Tro thanh tan sinh vien truong Truong Dai hoc CMC"],
-               "context":[]
+               
+               "context":["xet tuyen"]
              },
              {
                "tag":"hoso",
                "patterns":["ho so xet tuyen","ho so tuyen sinh"],
                "responses":["ho so bao gom:\nDien phieu dang ky xet tuyen Truong Dai hoc CMC;\nBan photo/scan CMND/CCCD/ho chieu;\nBan photo/scan Hoc ba THPT (doi voi ho so dang ky xet tuyen theo ket qua Hoc ba THPT);\nGiay chung nhan ket qua thi THPT nam 2022 (doi voi ho so dang ky xet tuyen theo ket qua thi THPT nam 2022);\nBan photo/scan cac giay to, van bang/chung chi khac (neu co)"],
-               "context":[]
+               "context":["xet tuyen"]
              },
              {
                "tag":"thoi gian",
                "patterns":["lich trinh tuyen sinh","thoi gian tuyen sinh","lich trinh xet tuyen","thoi gian xet tuyen","khi nao tuyen sinh","khi nao xet tuyen","bao gio tuyen sinh","bao gio xet tuyen"],
                "responses":["Doi voi phuong thuc 1: Xet tuyen dua tren ket qua thi tot nghiep THPT nam 2022: theo quy dinh cua Bo GD&DT\n.Doi voi phuong thuc 2: Xet tuyen dua tren ket qua hoc tap bac THPT (hoc ba):\nDot 1: Tu 15/03 den 30/06/2022\nDot 2: Tu 01/07 den 20/07/2022\nDoi voi phuong thuc 3: Tu ngay 15/03/2022 den ngay 20/07/2022.\nDoi voi phuong thuc 4: Xet tuyen dua vao ket qua ky thi Danh gia nang luc nam 2022 cua Dai hoc Quoc gia Ha Noi, Dai hoc Quoc gia Ho Chi Minh, ky thi Danh gia tu duy cua Truong Dai hoc Bach Khoa Ha Noi: Tu ngay 15/03/2022 den ngay 30/09/2022."],
-               "context":[]
+               "context":["xet tuyen"]
              },
              {
                "tag":"hoc phi",
                "patterns":["hoc phi chinh khoa","tien hoc chinh khoa"],
                "responses":[" tien hoc la 1 trieu dong 1 tin chi, moi mon 3 tin chi tong la 3 trieu dong 1 mon/ 1 ky"],
-               "context":[]
+               "context":["hoc phi"]
+             },
+             {
+              "tag":"cach dong hoc",
+              "patterns":["cach dong hoc phi qua dau"],
+              "responses":["ban co the dong hoc phi qua phong dao tao cua nha truong tai phong 111 hoac chuyen khoan qua tai khoan rieng cua moi hoc sinh da duoc dang ky tren he thong iu cua nha truong"],
+              "context":["hoc phi"]
              },
              {
                "tag":"hocbong",
-               "patterns":["hoc bong"],
+               "patterns":["hoc bong va uu dai"],
                "responses":["ban muon hoi ve goi hoc bong nao a :\nhoc bong cmc khai phong\nhoc bong cmc sang tao\nhoc bong cmc tien phong"],
-               "context":[]
+               "context":["hoc bong"]
              },
              {
                "tag":"khai phong",
                "patterns":["hoc bong cmc khai phong"],
                "responses":["So luong du kien: 50 suat.\nTri gia hoc bong: 100% hoc phi toan khoa hoc (khong bao gom hoc phi chuong trinh hoc tieng Anh).\nDoi tuong va tieu chi xet hoc bong: thi sinh nhap hoc Truong Dai hoc CMC nam 2024 thoa man it nhat mot trong cac tieu chi sau:\nDat giai nhat, nhi, ba trong cac ky thi hoc sinh gioi va ky thi Khoa hoc Ky thuat cap quoc gia, quoc te trong cac nam tu 2021 – 2024 va co mon doat giai nam trong to hop xet tuyen vao nganh tuong ung cua Truong Dai hoc CMC.\nLuu y: Thi sinh dat giai mon Tin hoc duoc xet hoc bong vao nganh Cong nghe Thong tin.\nTong diem thi tot nghiep THPT theo to hop mon dang ky xet tuyen nam 2024 dat tu 26,00 diem tro len (co bao gom diem uu tien).\nCo chung chi tieng Anh IELTS 7.5 tro len hoac tuong duong hoac chung chi ngoai ngu tieng Nhat N2 tro len (voi thi sinh DKXT vao nganh Ngon ngu Nhat) hoac chung chi ngoai ngu tieng Han Quoc TOPIK 5 tro len (voi thi sinh DKXT vao nganh Ngon ngu Han Quoc). Ngoai ra, ket qua hoc tap HK1 lop 12 khong co mon nao duoi 8,00 diem trong to hop xet tuyen."],
-               "context":[]
+               "context":["hoc bong"]
              },
              {
                "tag":"sang tao",
                "patterns":["hoc bong cmc sang tao"],
                "responses":["So luong du kien: 100 suat.\nTri gia hoc bong: 70% hoc phi toan khoa hoc (khong bao gom hoc phi chuong trinh hoc tieng Anh)."],
-               "context":[]
+               "context":["hoc bong"]
              },
              {
                "tag":"tienphong",
                "patterns":["hoc bong cmc tien phong"],
                "responses":["So luong du kien: 250 suat.Tri gia hoc bong: 50% hoc phi toan khoa hoc (khong bao gom hoc phi chuong trinh hoc tieng Anh).Doi tuong va tieu chi xet hoc bong: thi sinh nhap hoc Truong Dai hoc CMC nam 2024 thoa man it nhat mot trong cac tieu chi sau:"],
-               "context":[]
+               "context":["hoc bong"]
              },
              {
               "tag":"he dao tao",
               "patterns":["he dao tao"],
               "responses":["nha truong co 2 he dao tao gon he dao tao song ngu va he dao tao tieu chuan, ban muon hoi ve he dao tao nao"],
-              "context":[]
+              "context":["dao tao"]
 
 
              },
@@ -143,61 +155,69 @@
               "tag":"he dao tao tieu chuan",
               "patterns":["he dao tao tieu chuan"],
               "responses":["Chuong trinh giao duc dai hoc He dao tao Tieu chuan (Standard Mode – SM) la chuong trinh dao tao cu nhan trinh do dai hoc chinh quy, dat chuan dau ra theo cong bo cua Truong va dap ung yeu cau hoi nhap trong khu vuc va the gioi. Tu nam thu hai, sinh vien hoc tap voi tai lieu giang day bang tieng Anh cho cac mon chuyen nganh\n cac nganh bao gon\ncong nghe thong tin\nkho hoc may tinh\n quan tri kinh doanh\n marketing"],
-              "context":[]
+              "context":["dao tao"]
              },
              {
               "tag":"he dao tao song ngu",
               "patterns":["he dao tao song ngu"],
               "responses":["Chuong trinh giao duc dai hoc He dao tao Song ngu (Global Mode – GM) la chuong trinh dao tao cu nhan trinh do dai hoc chinh quy, voi diem noi bat la su dung ngon ngu giang day tieng Anh cho toan bo hoc phan chuyen mon. Chuong trinh dao tao cua He dao tao Song ngu duoc xay dung voi phuong phap giao duc dac biet, dao tao nguoi hoc dat chuan dau ra cao hon ve ky nang tieng Anh, ky nang mem, ky nang chuyen mon.\n cong nghe thong tin viet - han - nhat \n marketing \nkhoa hoc may tinh\n quan tri kinh doanh"],
-              "context":[]
+              "context":["dao tao"]
+             },
+             {
+              "tag":"lien ket",
+              "patterns":["nha truong co lien ket hop tac doi ngoai"],
+              "responses":["hien tai nha truong dang hop tac voi cac cong ty tai nhat ban,han quoc nham nang cao chat luong dao tao va tang co hoi viec lam cho nhung sinh vien ra truong"],
+              "context":["dao tao"]
+
+
              },
              {
               "tag":"tieng anh",
               "patterns":["chuong trinh dao tao tieng anh"],
               "responses":["chuong trinh tieng anh gom 6 cap do, dam bao chat luong dau ra tuong duong ielts 6.0, ban muon hoi ve cap do may"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"hoc phi tieng anh",
               "patterns":["hoc tieng anh mot cap do hoc phi bao nhieu tien"],
               "responses":["tien hoc tieng anh 1 la 10 trieu cho mot cap do gom 120 tiet hoc tren lop va 50 tiet tu hoc"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"tieng anh 1",
               "patterns":["chuong trinh dao tao tieng anh cap do 1"],
               "responses":["tieu chuan dau ra la 3.0 ielts, la cap do dau tien trong 6 cap do"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"tieng anh 2",
               "patterns":["chuong trinh dao tao tieng anh cap do 2"],
               "responses":["tieu chuan dau ra la 3.5 ielts, hoc sau cap do 1 hoac tuong duong"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"tieng anh 3",
               "patterns":["chuong trinh dao tao tieng anh cap do 3"],
               "responses":["tieu chuan dau ra la 4.0 ielts, hoc sau cap do 2 hoac tuong duong"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"tieng anh 4",
               "patterns":["chuong trinh dao tao tieng anh cap do 4"],
               "responses":["tieu chuan dau ra la 4.5 ielts, hoc sau cap do 3 hoac tuong duong"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"tieng anh 5",
               "patterns":["chuong trinh dao tao tieng anh cap do 5"],
               "responses":["tieu chuan dau ra la 5.0 ielts, hoc sau cap do 4 hoac tuong duong"],
-              "context":[]
+              "context":["tieng anh"]
              },
              {
               "tag":"tieng anh 6",
               "patterns":["chuong trinh dao tao tieng anh cap do 6"],
               "responses":["tieu chuan dau ra la 5.5 ielts, hoc sau cap do 5 hoac tuong duong"],
-              "context":[]
+              "context":["tieng anh"]
              }
              
              
@@ -213,4 +233,5 @@
         ]
      }
      
+
 
